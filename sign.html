@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./log.css">
+    <title>BiFa/SignUp</title>
+</head>
+<body>
+    <div class="top" id="top">
+    
+        <div class="text">
+            <h1>
+                StarLight Clothing
+                </h1>
+               
+                <h6>
+                    Discover The New You
+                </h6>
+        </div>
+        <!-- <i class="bi bi-tablet"></i>
+        <i class="bi bi-pin-angle"></i>
+        <i class="bi bi-person-square"></i> -->
+    </div>
+    <div class="main">
+        <form action="./home.html" id="form"  method="get">   
+            <i class="bi bi-person-fill"></i>
+           <div>
+            <input type="text" placeholder="Firstname"  id="Fname" onkeyup="valfname()">
+            <span id="Fname-error"></span>
+           </div>
+           <div>
+            <input type="text" placeholder="Lastname"  id="Lname" onkeyup="vallname()">
+            <span id="Lname-error"></span>
+           </div>
+           <div>
+            <input type="email" placeholder="Email Address or Username"  id="Email" onkeyup="valemail()">
+            <span id="Email-error"></span>
+           </div>
+            <div>
+             <input type="password" placeholder="Password" id="Pass" onkeyup="valpass()">
+             <span id="Pass-error"></span>
+            </div>
+            <button type="submit"  onclick= "return valform()">
+                Sign up
+            </button>
+            <small id="SubmitError"></small>
+            <span><div class="account">Already have an account <i class="bi bi-emoji-smile-fill"></i></div> <a href="./login.html">Login</a></span>
+        </form>
+        
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

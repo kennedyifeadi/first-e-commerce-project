@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+}
+
+.top{
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-image: url("./images/backgground 2.jpg");
+}
+#top{
+    background-image: url("./images/background.jpg");
+}
+#top h1{
+    color: black;
+    margin-top: -500px;
+    line-height: 980px;
+    font-size: 50px;
+
+}
+@media  screen and (min-width:481px) and  (max-width: 768px) {
+   .text h1{
+        font-size: 35px;
+        color:blue ;
+        font-weight: bolder;
+    }
+.top{
+    background-image: url("images/background.jpg");
+}
+
+}
+
+@media screen  and (max-width:480px){
+    body{
+        flex-direction: column;
+        height: 100vh;
+       
+    }
+    .top{
+       align-self: stretch; 
+       height: 50%;
+    }
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    position: relative;
+    width: 100%;
+    top: -10px;
+}
+ h1{
+   
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    font-style: italic;
+    color: #f7f7f7;
+    text-align: center;
+} 
+ h6{
+
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-align: center;
+
+    
+}
+.main{
+    flex: 1;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main form{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background:#f7f7f7;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 370px;
+    height: 250px;
+    
+}
+#form{
+    height: 375px;
+}
+#form button{
+    height: 10%;
+}
+.invalid{
+    border: 1px solid red;
+    box-shadow: 0px 0px 2px red inset;
+}
+input{
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    letter-spacing: 1.2px;
+    border-left: none;
+    border-top: none;
+    outline: none;
+    border-right: none;
+    height: 35px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main form div{
+    display: flex;
+
+}
+.main form div span{
+    position: absolute;
+    right: 220px;
+    color: red;
+    font-size: 15px;
+    padding-top: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100px;
+    font-style: italic;
+    font-size: 12px;
+}
+#Email-error{
+    justify-content: flex-end;
+}
+#Pass-error{
+    width: max-content;
+
+}
+button{
+    color: white;
+    font-size: 25px;
+    width: 80%;
+    background-color: blue;
+    height: 14%;
+    border: none;
+    border-radius: 12px;
+    letter-spacing: 1.2px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+} 
+button:hover{
+    background-color: rgb(15, 15, 204);
+}
+span{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+span a{
+    align-self: center;
+    font-size: 13px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+span a:hover{
+    color: darkblue;
+    letter-spacing: 1px;
+}
+.bi-person-fill{
+    font-size: 60px;
+    color: white;
+    background-color: darkblue;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.bi-emoji-smile-fill, .bi-emoji-frown-fill{
+    color: transparent;
+    font-size: 18px;
+    background: linear-gradient(50deg, yellow, red);
+    -webkit-background-clip: text;
+    
+}
